@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  background-color: rgb(218, 218, 218);
+}
+
 .landing {
   height: 100vh;
   width: 100vw;
@@ -18,9 +22,9 @@
 }
 
 .gerald-elias {
-  font-family: 'Rock Salt', cursive;
   color: #e4e4dc;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
+  font-family: var(--font-rock-salt);
   margin-left: 2rem;
 }
 
@@ -35,7 +39,7 @@
 }
 
 .nav-menu a {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit);
   color: #e4e4dc;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -128,14 +132,14 @@
 }
 
 .about-description {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--font-roboto-slab);
   font-weight: 300;
   width: 50vw;
   font-size: 1.2rem;
 }
 
 .about-header {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--font-roboto-slab);
   font-weight: 500;
   color: rgb(60, 60, 60);
   font-size: 2rem;
@@ -143,7 +147,7 @@
 
 .about-line {
   width: 12.5rem;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(148, 148, 148);
   height: 2px;
   margin-bottom: 2rem;
 }
@@ -163,6 +167,21 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20rem;
+  width: 80%;
+  position: relative;
+}
+
+.home-books-list a {
+  text-decoration: none;
+}
+
+.home-books-container {
+  background-color: rgb(237, 237, 237);
+  width: 100vw;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home-book {
@@ -183,7 +202,7 @@
   background-color: rgb(233, 233, 233);
   width: 10.5rem;
   color: rgb(91, 91, 91);
-  font-family: 'Outfit';
+  font-family: var(--font-outfit);
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -200,6 +219,26 @@
 .home-books-header {
   color: rgb(60, 60, 60);
   font-size: 2rem;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--font-roboto-slab);
   font-weight: 500;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.featured {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-image {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+.featured-text {
+  position: relative;
+  width: 40%;
 }

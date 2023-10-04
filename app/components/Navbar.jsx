@@ -1,7 +1,7 @@
 export default function Navbar(){
     return (
         <div className="navbar">
-            <h3 className="gerald-elias">Gerald Elias</h3>
+            <h3 className={`gerald-elias`}>Gerald Elias</h3>
             <nav className="nav-menu">
                 <a href="/">HOME</a>
                 <a href="/books">BOOKS AND MORE<span className="down-carrot">▼</span></a>

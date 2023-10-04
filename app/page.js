@@ -1,9 +1,23 @@
+import { Rock_Salt } from "next/font/google"
+
+const rock_salt = Rock_Salt({
+  weight: '400',
+  subsets: ['latin'],
+})
+
 export default function Home() {
   return (
     <>
       <div className="landing">
         <div className="arrow-container">
             <img src="/down-arrow.png" className="arrow" />
+        </div>
+      </div>
+      <div className="featured">
+        <img className="featured-image" />
+        <div className="featured-text">
+          <h4 className="featured-header"></h4>
+          <p className="">Experience the thrill of live performances woven into the tale, as you unravel a symphony of secrets in the English countryside.</p>
         </div>
       </div>
       <div className="about">
@@ -16,23 +30,25 @@ export default function Home() {
         </div>
         <img className="about-image" src="/gerald-elias-portrait.jpeg"/>
       </div>
-      <h2 className="home-books-header">Books by Gerald Elias</h2>
-      <div className="home-books-list">
-        <div className="home-book">
-            <img src="/roundtree-days.jpg" />
-        </div>
-        <div className="home-book">
-            <img src="/book-its-a-crime.jpg" />
-        </div>
-        <div className="home-book">
-            <img src="/book-murder-at-the-royal-albert.jpg" />
-        </div>
-        <div className="home-book">
-            <img src="/book-cloudy-with-a-chance-of-murder.jpg" />
-        </div>
-        <div className="home-book">
-            <a href="/books">All Books</a>
-        </div>
+      <div className="home-books-container">
+        <h2 className="home-books-header">Books by Gerald Elias</h2>
+        <div className="home-books-list">
+          <a href="/books/roundtree-days" className="home-book">
+              <img src="/roundtree-days.jpg" />
+          </a>
+          <a href="/books/its-a-crime" className="home-book">
+              <img src="/book-its-a-crime.jpg" />
+          </a>
+          <a href="/books/murder-at-the-royal-albert" className="home-book">
+              <img src="/book-murder-at-the-royal-albert.jpg" />
+          </a>
+          <a href="/books/cloudy-with-a-chance-of-murder" className="home-book">
+              <img src="/book-cloudy-with-a-chance-of-murder.jpg" />
+          </a>
+          <a href="/books" className="home-book">
+              <a href="/books">All Books</a>
+          </a>
+      </div>
       </div>
     </>
   )
